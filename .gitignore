@@ -1,2 +1,10 @@
 .gitignore 
 .env.example
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/*.db
+!data/.gitkeep
+.DS_Store
