@@ -38,3 +38,16 @@ TARGET_HORIZON_DAYS = 3
 RSI_WINDOW = 14
 SMA_WINDOW = 10
 VOLUME_RELATIVE_WINDOW = 20
+
+# --- Fase 4: reglas de negocio para el reporte prescriptivo ---
+# Umbrales sobre la probabilidad predicha por XGBoost (definicion de negocio,
+# ver src/reports/business_rules.py para la logica completa).
+UMBRAL_SENAL_ALERTA = 0.65
+UMBRAL_SENAL_MONITOREAR = 0.40
+RSI_SOBREVENTA = 30
+RSI_SOBRECOMPRA = 70
+VOLUMEN_RELATIVO_SPIKE = 2.0
+
+REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
+REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
+REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT")
