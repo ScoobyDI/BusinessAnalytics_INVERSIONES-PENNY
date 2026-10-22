@@ -1,13 +1,13 @@
-.gitignore 
-.env.example
 __pycache__/
 *.pyc
 .venv/
 venv/
 .env
-data/
+.streamlit/secrets.toml
 data/*.db
 data/*.csv
 data/*.json
 !data/.gitkeep
+*.pkl
+*.egg-info/
 .DS_Store
