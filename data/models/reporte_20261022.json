@@ -1,5 +1,5 @@
 {
-  "modelo_version": "xgboost-20260924",
+  "modelo_version": "xgboost-20261022",
   "n_filas_entrenamiento": 246,
   "features": [
     "rsi",
